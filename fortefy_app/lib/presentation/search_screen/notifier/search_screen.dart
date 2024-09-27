@@ -3,8 +3,8 @@ import '../../core/app_export.dart';
 import '../../theme/custom_button_style.dart';
 import '../../widgets/app_bar/appbar_leading_iconbutton.dart';
 import '../../widgets/app_bar/custom_app_bar.dart';
-import '../../widgets/custom_bottom_bar.dart'
-import '../../widgets/custom_elevated_button.dart'
+import '../../widgets/custom_bottom_bar.dart';
+import '../../widgets/custom_elevated_button.dart';
 import '../../widgets/custom_radio_button.dart';
 import '../../widgets/custom_text_form_field.dart';
 import 'notifier/search_notifier.dart';
