@@ -40,24 +40,24 @@ class HomeScreenState extends ConsumertState<HomeScreen> {
           ),
           child: Container(
             padding: EdgeInsets.only(
-              left: 10,
-              top: 22,
-              right: 10,
+              left: 10.h,
+              top: 22.h,
+              right: 10.h,
             ),
             child: Column(
               children: [
                 _buildSearchSection(context),
-                SizedBox(height: 48),
+                SizedBox(height: 48.h),
                 Container(
                   width: double.maxFinite,
-                  margin: EdgeInsets.symmetric(horizontal: 32),
+                  margin: EdgeInsets.symmetric(horizontal: 32.h),
                   child: Column(
                     children: [
                       Container(
                         width: double.maxFinite,
                         padding: EdgeInsets.symmetric(
-                          horizontal: 54,
-                          vertical: 42,
+                          horizontal: 54.h,
+                          vertical: 42.h,
                         ),
                         decoration: BoxDecoration(
                           color: appTheme.blueGray100,
@@ -73,14 +73,14 @@ class HomeScreenState extends ConsumertState<HomeScreen> {
                               textAlign: TextAlign.center,
                               style: CustomTextStyles.labelMediumOnPrimary,
                             ),
-                            SizedBox(height: 292)
+                            SizedBox(height: 292.h)
                           ],
                         ),
                       )
                     ],
                   ),
                 ),
-                SizedBox(height: 4)
+                SizedBox(height: 4.h)
               ],
             ),
           ),
@@ -96,14 +96,14 @@ class HomeScreenState extends ConsumertState<HomeScreen> {
   Widget _buildSearchSection(BuildContext context) {
     return Container(
       width: double.maxFinite,
-      margin: EdgeInsets.only(right: 10),
+      margin: EdgeInsets.only(right: 10.h),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           CustomIconButton(
-            height: 40,
-            width: 42,
-            padding: EdgeInsets.all(10),
+            height: 40.h,
+            width: 42.h,
+            padding: EdgeInsets.all(10.h),
             child: CustomImageView(
               imagePath: ImageConstant.imgArrowDown,
             ),
@@ -115,7 +115,7 @@ class HomeScreenState extends ConsumertState<HomeScreen> {
                 return CustomSearchView(
                   controller: ref.watch(homeNotifier).searchController,
                   hintText: "meg_escreva_o_servi_o".tr,
-                  contentPadding: EdgeInsets.fromLTRB(12, 8, 16, 8),
+                  contentPadding: EdgeInsets.fromLTRB(12.h, 8.h, 16.h, 8.h),
                 );
               },
             ),
