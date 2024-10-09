@@ -24,7 +24,7 @@ class CustomBottomBarState extends State<CustomBottomBar> {
     BottomMenuModel(
       icon: ImageConstant.imgUser,
       activeIcon: ImageConstant.imgUser,
-      type: BottomBarEnum.User;
+      type: BottomBarEnum.User,
     ),
     BottomMenuModel(
       icon: ImageConstant.imgUser,
@@ -62,14 +62,14 @@ class CustomBottomBarState extends State<CustomBottomBar> {
               return BottomNavigationBarItem(
                 icon: CustomImageView(
                   imagePath: bottomMenuList[index].icon,
-                  height: 48,
-                  width: 50,
+                  height: 48.h,
+                  width: 50.h,
                   color: Color(0XFFD9D9D9),
                 ),
                 activeIcon: CustomImageView(
                   imagePath: bottomMenuList[index].activeIcon,
-                  height: 48,
-                  width: 50,
+                  height: 48.h,
+                  width: 50.h,
                   color: Color(0XFFD9D9D9),
                 ),
                 label: '',

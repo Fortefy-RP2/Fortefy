@@ -5,15 +5,15 @@ import 'package:fortefy_v2/main.dart';
 abstract class NetworkInfo {
   Future<bool> isConnected();
 
-  Future<ConnectivityResult> get ConnectivityResult;
+  Future<ConnectivityResult> get connectivityResult;
 
   Stream<ConnectivityResult> get onConnectivityChanged;
 }
 
-class NetworkInfo implements NetworkInfo {
+class NetworkInfo implements NetworkInfoI {
   Connectivity connectivity;
 
-  static final NetworkInfo _networkInfo = NetworkInfo.internal(Connectivity());
+  static final NetworkInfo _networkInfo = NetworkInfo._internal(Connectivity());
 
   factory NetworkInfo() {
     return _networkInfo;

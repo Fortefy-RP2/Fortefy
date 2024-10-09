@@ -30,7 +30,7 @@ final Map<String, String> enUs = {
   "lbl_rodrigo_g_oes": "Rodrigo Góes",
   "lbl_zeka_ramos": "Zeka Ramos",
   "msg_articula_es_treino": "Articulações, treino natural, \nfortalecimento",
-  "msg_distrito_federal:" "Distrito Federal, Brasília",
+  "msg_distrito_federal:": "Distrito Federal, Brasília",
 
 
   "lbl_aluno" : "Aluno", "lbl_personal": "Personal", "lbl_voc": "Você é...",

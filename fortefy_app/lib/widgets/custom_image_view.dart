@@ -55,7 +55,7 @@ class CustomImageView extends StatelessWidget {
     final BoxBorder? border;
 
     @override
-    Widget build(Build context) {
+    Widget build(BuildContext context) {
       return alignment != null
           ? Align(alignment: alignment!, child: _buildWidget())
           : _buildWidget();
@@ -108,7 +108,7 @@ class CustomImageView extends StatelessWidget {
               height: height,
               width: width,
               fit: fit ?? BoxFit.contain,
-              ColorFilter: this.color != null
+              colorFilter: this.color != null
                   ? ColorFilter.mode(
                       this.color ?? Colors.transparent, BlendMode.srcIn)
                   : null,
@@ -123,7 +123,7 @@ class CustomImageView extends StatelessWidget {
             color: color,
           );
         case ImageType.network:
-          return CashedNetworkImage(
+          return CachedNetworkImage(
             height: height,
             width: width,
             fit: fit,
@@ -136,7 +136,7 @@ class CustomImageView extends StatelessWidget {
                 color: Colors.grey.shade100,
               ),
             ),
-            ErrorWidget: (context, url, error) => Image.asset(
+            errorWidget: (context, url, error) => Image.asset(
               placeHolder,
               height: height,
               width: width,

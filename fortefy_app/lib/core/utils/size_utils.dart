@@ -17,7 +17,7 @@ extension FormatExtension on double {
   }
 
   double isNonZero({num defaultValue = 0.0}) {
-    return this > 0 ? this : defaultVaule.toDouble();
+    return this > 0 ? this : defaultValue.toDouble();
   }
 }
 

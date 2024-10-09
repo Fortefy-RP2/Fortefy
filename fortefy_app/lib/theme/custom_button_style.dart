@@ -7,7 +7,7 @@ class CustomButtonStyles {
   static ButtonStyle get fillBlueGray => ElevatedButton.styleFrom(
     backgroundColor: appTheme.blueGray90001,
     shape: RoundedRectangleBorder(
-      borderRadius: borderRadius.circular(10.h),
+      borderRadius: BorderRadius.circular(10.h),
     ),
     elevation: 0,
     padding: EdgeInsets.zero,
@@ -15,7 +15,7 @@ class CustomButtonStyles {
   static ButtonStyle get fillGray => ElevatedButton.styleFrom(
     backgroundColor: appTheme.gray70001,
     shape: RoundedRectangleBorder(
-      borderRadius: borderRadius.circular(10.h),
+      borderRadius: BorderRadius.circular(10.h),
     ),
     elevation: 0,
     padding: EdgeInsets.zero,
@@ -23,7 +23,7 @@ class CustomButtonStyles {
   static ButtonStyle get fillPrimary => ElevatedButton.styleFrom(
     backgroundColor: theme.colorScheme.primary,
     shape: RoundedRectangleBorder(
-      borderRadius: borderRadius.circular(8.h),
+      borderRadius: BorderRadius.circular(8.h),
     ),
     elevation: 0,
     padding: EdgeInsets.zero,
@@ -31,7 +31,7 @@ class CustomButtonStyles {
   static ButtonStyle get fillTeal => ElevatedButton.styleFrom(
     backgroundColor: appTheme.teal80001,
     shape: RoundedRectangleBorder(
-      borderRadius: borderRadius.circular(8.h),
+      borderRadius: BorderRadius.circular(8.h),
     ),
     elevation: 0,
     padding: EdgeInsets.zero,

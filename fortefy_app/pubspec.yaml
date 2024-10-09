@@ -30,13 +30,20 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  flutter_localizations:
+    sdk: flutter
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   flutter_riverpod: ^2.0.0
   equatable: ^2.0.5
+  connectivity_plus: ^3.0.6
+  intl: ^0.19.0
+  shared_preferences: ^2.0.15
+  cached_network_image: ^3.3.0
+  flutter_svg: ^2.0.9
+
 
 dev_dependencies:
   flutter_test:
@@ -59,6 +66,33 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/InterRegular.ttf
+          weight: 400
+        - asset: assets/fonts/InterMedium.ttf
+          weight: 500
+        - asset: assets/fonts/InterExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/InterLight.ttf
+          weight: 300
+        - asset: assets/fonts/InterItalic.ttf
+          weight: 400
+        - asset: assets/fonts/InterBoldItalic.ttf
+          weight: 700
+        - asset: assets/fonts/InterSemiBoldItalic.ttf
+          weight: 600
+        - asset: assets/fonts/InterMediumItalic.ttf
+          weight: 500
+        - asset: assets/fonts/InterSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/InterExtraLightItalic.ttf
+          weight: 200
+        
 
   # To add assets to your application, add an assets section, like this:
   # assets:

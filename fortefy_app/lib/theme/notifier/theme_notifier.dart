@@ -13,6 +13,6 @@ class ThemeNotifier extends StateNotifier<ThemeState> {
 
   changeTheme(String themeType) async {
     PrefUtils().setThemeData(themeType);
-    state = state.copyWith(themeType: prefUtils().getThemeData());
+    state = state.copyWith(themeType: PrefUtils().getThemeData());
   }
 }

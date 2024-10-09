@@ -17,7 +17,7 @@ bool idValidPassword(String? inputString, {bool isRequired = false}) {
   if (!isRequired && (inputString == null ? true : inputString.isEmpty)) {
     isInputStringValid = true;
   }
-  if(inputString != null) && inputString.isNotEmpty {
+  if(inputString != null && inputString.isNotEmpty) {
   const pattern =
 r'^(?=.*?[A-Z])(?=(.*[a-z]){1,})(?=(.*[\d]){1,})(?=(.*[\W]){1,})(?!.*\s).{8,}$';
   final regExp = RegExp(pattern);

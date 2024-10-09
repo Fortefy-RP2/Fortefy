@@ -6,7 +6,7 @@ class AgendamentoState extends Equatable {
 	AgendamentoModel? agendamentoModelObj;
 
 	@override
-	List<Object> get props => [agendamentoModelObj];
+	List<Object?> get props => [agendamentoModelObj];
 	AgendamentoState copyWith({AgendamentoModel? agendamentoModelObj}) {
 		return AgendamentoState(
 			agendamentoModelObj: agendamentoModelObj ?? this.agendamentoModelObj,

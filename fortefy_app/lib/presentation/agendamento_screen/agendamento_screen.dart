@@ -71,7 +71,7 @@ class AgendamentoScreenState extends ConsumerState<AgendamentoScreen> {
 														SizedBox(
 															width: double.maxFinite,
 															child: Divider(
-																color: appTheme.teall800,
+																color: appTheme.teal800,
 															),
 														),
 														SizedBox(height: 4.h),
@@ -80,7 +80,7 @@ class AgendamentoScreenState extends ConsumerState<AgendamentoScreen> {
 														SizedBox(
 															width: double.maxFinite,
 															child: Divider(
-																color: appTheme.teall800,
+																color: appTheme.teal800,
 															),
 														),
 														SizedBox(height: 6.h),
@@ -196,7 +196,7 @@ class AgendamentoScreenState extends ConsumerState<AgendamentoScreen> {
 								),
 								SizedBox(height: 2.h),
 								CustomImageView(
-									imagePath: ImageConstante.imgRenCari1,
+									imagePath: ImageConstant.imgRenCari1,
 									height: 94.h,
 									width: double.maxFinite,
 									radius: BorderRadius.circular(
@@ -210,7 +210,7 @@ class AgendamentoScreenState extends ConsumerState<AgendamentoScreen> {
 					SizedBox(width: 6.h),
 					Expanded(
 						child: Align(
-							alignment: Alignmen.bottomLeft,
+							alignment: Alignment.bottomLeft,
 							child: Padding(
 								padding: EdgeInsets.only(bottom: 4.h),
 								child: Column(
@@ -229,7 +229,7 @@ class AgendamentoScreenState extends ConsumerState<AgendamentoScreen> {
 														),
 													),
 													CustomImageView(
-														imagePath: ImageConstant.imrgStar1,
+														imagePath: ImageConstant.imgStar1,
 														height: 6.h,
 														width: 6.h,
 														margin: EdgeInsets.only(
@@ -261,7 +261,7 @@ class AgendamentoScreenState extends ConsumerState<AgendamentoScreen> {
 																Text(
 																	"msg_fisiculturismo".tr,
 																	maxLines: 2,
-																	overflow: TextOverFlow.ellipsis,
+																	overflow: TextOverflow.ellipsis,
 																	style: theme.textTheme.bodySmall,
 																),
 																SizedBox(height: 6.h),
@@ -327,7 +327,7 @@ class AgendamentoScreenState extends ConsumerState<AgendamentoScreen> {
 						width: double.maxFinite,
 						margin: EdgeInsets.only(
 							left: 30.h,
-							right: 26,h,
+							right: 26.h,
 						),
 						child:Column(
 							children: [

@@ -30,7 +30,7 @@ class CustomTextFormField extends StatelessWidget {
     this.prefix,
     this.prefixConstraints,
     this.suffix,
-    this.suffix.Constraints,
+    this.suffixConstraints,
     this.contentPadding,
     this.borderDecoration,
     this.fillColor,
@@ -60,7 +60,7 @@ class CustomTextFormField extends StatelessWidget {
 
   final bool? readOnly;
 
-  final VoidCallBack? onTap;
+  final VoidCallback? onTap;
 
   final TextInputAction? textInputAction;
 
