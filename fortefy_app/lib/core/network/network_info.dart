@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:fortefy_v2/main.dart';
 
-abstract class NetworkInfo {
+// Interface para NetworkInfo
+abstract class NetworkInfoI {
   Future<bool> isConnected();
-
-  Future<ConnectivityResult> get connectivityResult;
-
+  Future<ConnectivityResult> getConnectivityResult();
   Stream<ConnectivityResult> get onConnectivityChanged;
 }
 
+// Classe que implementa NetworkInfo
 class NetworkInfo implements NetworkInfoI {
   Connectivity connectivity;
 
@@ -19,30 +19,26 @@ class NetworkInfo implements NetworkInfoI {
     return _networkInfo;
   }
 
-  NetworkInfo._internal(this.connectivity) {
-    connectivity = this.connectivity;
-  }
+  NetworkInfo._internal(this.connectivity);
 
   @override
   Future<bool> isConnected() async {
     final result = await connectivity.checkConnectivity();
-    if(result != ConnectivityResult.none) {
-      return true;
-    }
-    return false;
+    return result != ConnectivityResult.none;
   }
 
   @override
-  Future<ConnectivityResult> get ConnectivityResult async {
-    return connectivity.checkConnectivity();
+  Future<ConnectivityResult> getConnectivityResult() async {
+    return await connectivity.checkConnectivity();
   }
 
   @override
   Stream<ConnectivityResult> get onConnectivityChanged =>
-    connectivity.onConnectivityChanged;
+      connectivity.onConnectivityChanged;
 }
 
-abstract class Failure {} 
+// Classes de falhas e exceções
+abstract class Failure {}
 
 class ServerFailure extends Failure {}
 
@@ -56,13 +52,13 @@ class CacheException implements Exception {}
 
 class NetworkException implements Exception {}
 
-class NoInternetException implements Exception { 
+class NoInternetException implements Exception {
   late String _message;
 
-  NoInternetException([String message = 'NoInternetException Ocurred']) {
-    if(globalMessengerKey.currentState != null) {
+  NoInternetException([String message = 'NoInternetException Occurred']) {
+    if (globalMessengerKey.currentState != null) {
       globalMessengerKey.currentState!
-        .showSnackBar(SnackBar(content: Text(message)));
+          .showSnackBar(SnackBar(content: Text(message)));
     }
     this._message = message;
   }

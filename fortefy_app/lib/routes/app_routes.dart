@@ -11,7 +11,7 @@ import '../presentation/search_screen/search_screen.dart';
 import '../presentation/splash_screen/splash_screen.dart';
 
 
-class appRoutes {
+class AppRoutes {
   static const String agendamentoScreen = '/agendamento_screen';
 
   static const String searchPersonalScreen = '/search_personal_screen';
